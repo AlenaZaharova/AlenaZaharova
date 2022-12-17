@@ -1,0 +1,208 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+
+body {
+    color: black;
+    font-family: 'Karla', sans-serif;    
+    font-size: 18px;
+ }
+
+.container{
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+ /*Header*/
+.header {
+    padding-top: 46px;
+    background-color:azure;
+ }
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 76px;
+ }
+
+.logo{
+    font-weight: 700;
+    font-size: 32px;
+    color: black;
+ }
+
+ /*Nav*/
+
+.nav-list{
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 18px;
+ }
+
+ .nav-link{
+    color: black;
+ }
+
+ .nav-button{
+    display: none;
+    width: 30px; /* ширина картинки */
+    height:30px;
+ }
+
+ /*Header content*/
+
+.content{
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;    
+ } 
+
+.content-img{
+    width: 400px;
+    height: 400px
+}
+
+.content-row{
+    display:flex;
+    justify-content: space-between;
+    column-gap: 30px;
+ }
+
+.content-heading{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    align-items: flex-end;    
+ }
+
+.content-heading p{
+    line-height: 2;
+ }
+
+.infoBlock{
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;        
+}
+
+.infoBlock-head{
+    margin: 50px 0 20px 0;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+
+.infoBox{  
+    max-width: 1230px; 
+    text-align: justify;
+}
+
+.jobsBlock{
+    margin: 0 50px 0 20px;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.job{
+    list-style: none;
+  }
+
+.job li {
+    position: relative;
+    padding: 20px 0 20px 40px;
+    cursor: pointer;
+  }
+
+.job li:before {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4F5151;
+    content: "";
+    left: 0;
+    transition: .3s ease-in-out;
+    top: 27px;
+  }
+.job li:after {
+    position: absolute;
+    border-left: 1px dotted #4F5151;
+    width: 1px;
+    bottom: -12px;
+    content: "";
+    left: 3px;
+    top: 48px;
+  }
+.job li:hover:before{box-shadow: 0 0 0 10px rgba(0,0,0,.2)}
+.job li:last-child:after {content: none;}
+
+
+.adres{
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+.adres-head{
+    
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contacts{
+    padding-top: 46px;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;    
+}
+
+.contacts-title{
+    max-width: 1230px;
+    color: black;    
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contacts-footer{
+    max-width: 1230px;  
+    padding: 0 15px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.conect{
+    max-width: 1230px; 
+    display:flex;
+    text-align: center;     
+    padding: 10px 0 30px 0;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.img-scale {
+    transition: 0,85s; /* Время эффекта */
+    width: 40px; /* ширина картинки */
+    height:40px;
+}
+
+.img-scale:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */	
+}
+
+
+
+
+
+
+
+
